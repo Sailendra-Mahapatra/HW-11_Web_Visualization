@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Web Visualization Dashboard (Latitude)</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="style.css">
+	</head>
+	
+
+	<body>
+	    <nav class="navbar navbar-expand-md navbar-light bg-light">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+	                <a class="navbar-brand" href="index.html"><strong>HOME - Weather Change</strong></a>
+	            </div>
+	
+
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="navbar-nav ml-auto">
+	                    <li class="nav-item dropdown">
+	                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                Plots
+	                        </a>
+	                        <div class="dropdown-menu">
+	                            <a class="dropdown-item" href="temp.html">Temperature</a>
+	                            <a class="dropdown-item" href="humid.html">Humidity</a>
+	                            <a class="dropdown-item" href="cloud.html">Cloudness</a>
+	                            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                            </div>
+	                    </li>
+	                    <li class="nav-item"> 
+	                        <a class="nav-link" href="comparison.html">Comparison</a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link" href="data.html">Data</a>
+	                    </li>
+	                </ul>
+	            </div>
+	
+
+	        </div>
+	        
+	    </nav>
+        <br>
+
+	
+
+	    	<div class="container">
+				<div class="row row-grid">
+					
+					<div class="col-md-8">
+						<div class="box box-left">
+						<section id="intro">
+							<h1>Cloudness</h1>
+							<hr>
+							<figure>
+										<a target="_blank" href="HW-6_Latitude-Cloudness Plot.png">
+											<img id="viz-main" src="HW-6_Latitude-Cloudness Plot.png" alt="Latitude vs. Cloudness">
+										</a>
+							</figure>
+							
+							<section id="summary">
+							<p>Cloud cover is obsrved scattered from 0 to 100% from -40 Latitude towards Northern polar region. 
+							   The coverage is not observed towards Sourthern polar region.  The chart shows the latitude does not impact level of cloudness.
+							</p>
+							</section>
+		
+						</section>
+						</div>
+					</div>
+				
+				   
+					<div class="col-md-4">
+						<div class="box box-right">
+						<h2>Visualizations</h2>
+						<hr>
+		
+				   
+					  <div class="row">
+							<div class="col-xs-6 col-sm-3 col-md-6">
+								  <figure>
+									  <a href="temp.html">
+										  <img id="landing-viz" src="HW-6_Latitude-Max Temperature Plot.png" alt="Latitude vs. Max Temperature">
+									  </a>
+								  </figure>
+							  </div>
+						  
+						<div class="col-xs-6 col-sm-3 col-md-6">
+								<figure>
+									<a href="humid.html">
+										<img id="landing-viz" src="HW-6_Latitude-Humidity Plot.png" alt="Latitude vs. Humidity">
+									</a>
+								</figure>
+							</div>
+	  
+						<div class="col-xs-6 col-sm-3 col-md-6">
+								<figure>
+									
+									<a href="cloud.html">
+										<img id="landing-viz" src="HW-6_Latitude-Cloudness Plot.png" alt="Latitude vs. Cloudness">
+										<div class="shadow-sm p-1 mb-1 box bg-dark"></div>
+									</a>
+								
+								</figure>
+							</div>
+	  
+						<div class="col-xs-6 col-sm-3 col-md-6">
+								<figure>
+									<a href="wind.html">
+										<img id="landing-viz" src="HW-6_Latitude-Wind Speed Plot.png" alt="Latitude vs. Wind Speed">
+									</a>
+								</figure>
+							</div>
+		
+							</div>
+						</div>
+					  </div>
+						  
+					</div>
+				</div>
+		
+
+				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+	</body>
+	<footer class="footerSpace">
+        <h6 align="center" style="color:grey; font-size:12px;">
+            Dr. Sailendra Mahapatra | Rice University, Houston : Data Analytics and Visualization
+        </h6>
+    </footer>	
+	</html>
